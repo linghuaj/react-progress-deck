@@ -1,22 +1,21 @@
 'use strict';
 
 import React from 'react/addons';
-import Component from '../src/component';
+import ReactBadge from '../src/component';
 
 const App = React.createClass({
-
   render() {
     return (
       <div className="demo">
-        < Component >
-          component stuff goes here
-        </ Component >
+        < ReactBadge
+          imageUrl="http://i.imgur.com/WerlaFe.jpg"
+          title="Travel Around Canada"
+          description="Check in 5 different place in canada"
+        />
       </div>
     )
   }
 });
 
 const content = document.getElementById('content');
-
 React.render(<App/>, content)
-

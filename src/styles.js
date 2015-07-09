@@ -1,5 +1,7 @@
-let styles = {
-  materialize: {
+function getStyles(props, mainStyle){
+  //for now only support materialize design styled badge
+  mainStyle = 'materialize'
+  let styles = {
     card: {
       display: 'inline-block',
       verticalAlign: 'top',
@@ -12,31 +14,40 @@ let styles = {
       color: '#272727',
       borderRadius: '2px'
     },
+
     title: {
-      lineHeight: '48px',
-      fontSize: '24px',
-      fontWeight: 300,
-      position: 'absolute',
-      bottom: 0,
-      left: 0,
-      padding: '20px',
-      color: '#FFF'
+      lineHeight: '25px',
+      fontSize: '20px',
+      fontWeight: 300
     },
     content: {
+      fontSize: '12px',
       padding: '20px',
       fontWeight: 300,
-      borderRadius: '0 0 2px 2px'
+      borderRadius: '0 0 2px 2px',
+      lineHeight: '15px'
     },
-    image: {
-      position: 'relative'
+    percentageText: {
+      float: 'right'
+    },
+    imgContainer: {
+      width: '100%',
+      height: '160px',
+      overflow: 'hidden'
     },
     img: {
-      borderRadius: '2px 2px 0 0',
+      width: '100%'
+    },
+
+    thumbnailContainer: {
       position: 'relative',
-      left: 0,
-      right: 0,
-      top: 0,
-      bottom: 0,
+      height: '46px',
+      width: '46px',
+      overflow: 'hidden',
+      float: 'left',
+      marginRight: '10px'
+    },
+    thumbnail: {
       width: '100%'
     },
     progress: {
@@ -56,7 +67,33 @@ let styles = {
       bottom: 0,
       backgroundColor: '#26a69a'
     }
+    // }
   }
+  //TODO: what's the most effecient way
+  if (props.progressBackgroundColor){
+    styles.progress.backgroundColor = props.progressBackgroundColor;
+  }
+
+  if (props.progressForegroundColor){
+    styles.determinate.backgroundColor = props.progressForegroundColor;
+  }
+  styles.percentageText.color = styles.determinate.backgroundColor
+
+  if (props.size){
+    styles.card.width =props.size;
+  }
+
+  if (props.percentage){
+    styles.determinate.width = props.percentage * 100 + "%";
+  }
+
+  if (!props.imageUrl){
+    styles.imgContainer.height = '0px';
+  }
+
+  return styles;
 }
 
-export default styles;
+
+
+export default getStyles;

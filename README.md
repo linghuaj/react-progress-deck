@@ -38,6 +38,8 @@ Main, Image Deck Progress View
           percentage = {width}
         />
 ```
+[![image deck](https://github.com/vanessachem/react-badge/blob/master/assets/imgBadge.gif)](#features)
+
 Thumbnail Deck Progress View
 ```javascript
     < ReactBadge
@@ -49,6 +51,7 @@ Thumbnail Deck Progress View
           percentage = {width*2}
         />
 ```
+[![Thumbnail Deck](https://github.com/vanessachem/react-badge/blob/master/assets/thumbBadge.gif)](#features)
 
 Plain Deck Progress View
 ```javascript
@@ -62,3 +65,8 @@ Plain Deck Progress View
         />
 
 ```
+[![Plain Text Deck](https://github.com/vanessachem/react-badge/blob/master/assets/plainBadge.gif)](#features)
+
+Grouped View
+
+[![Grouped Decks](https://github.com/vanessachem/react-badge/blob/master/assets/screenshot.png)](#features)

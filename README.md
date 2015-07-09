@@ -1,4 +1,4 @@
-# react-badge
+# react-progress-deck
 
 -  react component for generating gamification badges.
 -  Ideal use case if for visualize achivement progress etc using materialized Badge.

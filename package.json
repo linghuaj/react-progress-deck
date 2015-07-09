@@ -60,6 +60,8 @@
   ],
   "author": "Linghua Jin <linghua.jin@gmail.com>",
   "license": "MIT",
-  "bugs": {},
+  "bugs": {
+    "url":"https://github.com/vanessachem/react-badge"
+  },
   "homepage": "https://github.com/vanessachem/react-badge"
 }

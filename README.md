@@ -1,7 +1,10 @@
-# react-badge
-- react component for generating gamification badges.
-- Ideal use case if for visualize achivement progress etc using materialized Badge.
+# react-progress-deck
+
+-  react component for generating gamification badges.
+-  Ideal use case if for visualize achivement progress etc using materialized Badge.
 -  material design, could be easily integrate with react-tween state for animiated progressing. 
+-  Please criticize this project and leave your feedback in issues :)
+
 
 ## TODO:
 - this will be installable using npm.
@@ -38,6 +41,8 @@ Main, Image Deck Progress View
           percentage = {width}
         />
 ```
+[![image deck](https://github.com/vanessachem/react-badge/blob/master/assets/imgBadge.gif)](#features)
+
 Thumbnail Deck Progress View
 ```javascript
     < ReactBadge
@@ -49,6 +54,7 @@ Thumbnail Deck Progress View
           percentage = {width*2}
         />
 ```
+[![Thumbnail Deck](https://github.com/vanessachem/react-badge/blob/master/assets/thumbBadge.gif)](#features)
 
 Plain Deck Progress View
 ```javascript
@@ -62,3 +68,8 @@ Plain Deck Progress View
         />
 
 ```
+[![Plain Text Deck](https://github.com/vanessachem/react-badge/blob/master/assets/plainBadge.gif)](#features)
+
+Grouped View
+
+[![Grouped Decks](https://github.com/vanessachem/react-badge/blob/master/assets/screenshot.png)](#features)

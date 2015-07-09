@@ -1,7 +1,10 @@
 # react-badge
-- react component for generating gamification badges.
-- Ideal use case if for visualize achivement progress etc using materialized Badge.
+
+-  react component for generating gamification badges.
+-  Ideal use case if for visualize achivement progress etc using materialized Badge.
 -  material design, could be easily integrate with react-tween state for animiated progressing. 
+-  Please criticize this project and leave your feedback in issues :)
+
 
 ## TODO:
 - this will be installable using npm.

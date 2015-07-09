@@ -27,6 +27,95 @@
       margin: auto;
       position: relative;
     }
+
+
+
+@import url(//fonts.googleapis.com/css?family=Roboto:400,500,300,100,700,900);
+html,
+body {
+font-family: 'Roboto', sans-serif;
+height: 100%;
+width: 100%;
+margin: 0;
+-webkit-font-smoothing: antialiased;
+}
+
+.card {
+display: inline-block;
+vertical-align: top;
+width: 350px;
+position: relative;
+overflow: hidden;
+margin: 10px;
+background: #FFF;
+box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+color: #272727;
+border-radius: 2px;
+}
+.card .title {
+line-height: 48px;
+font-size: 24px;
+font-weight: 300;
+}
+.card .content {
+padding: 20px;
+font-weight: 300;
+border-radius: 0 0 2px 2px;
+}
+.card p {
+margin: 0;
+}
+.card a {
+color: #ffab40;
+margin-right: 20px;
+text-transform: uppercase;
+text-decoration: none;
+}
+.card .image {
+position: relative;
+}
+.card .image img {
+border-radius: 2px 2px 0 0;
+position: relative;
+left: 0;
+right: 0;
+top: 0;
+bottom: 0;
+width: 100%;
+}
+
+.card .image .title {
+position: absolute;
+bottom: 0;
+left: 0;
+padding: 20px;
+color: #FFF;
+}
+
+
+.progress {
+position: relative;
+height: 5px;
+display: block;
+width: 100%;
+background-color: #acece6;
+border-radius:0px;
+overflow: hidden;
+}
+
+.determinate {
+position: absolute;
+width: 80% !important;
+top: 0;
+left: 0;
+bottom: 0;
+background-color: #26a69a;
+-webkit-transition: width .3s linear;
+-moz-transition: width .3s linear;
+-o-transition: width .3s linear;
+-ms-transition: width .3s linear;
+transition: width .3s linear;
+}
   </style>
 </head>
 <body>

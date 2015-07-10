@@ -56,7 +56,7 @@
     "url": "https://github.com/linghuaj/react-progress-deck.git"
   },
   "keywords": [
-    "react"
+    "react", "materialize", "progress"
   ],
   "author": "Linghua Jin <linghua.jin@gmail.com>",
   "license": "MIT",

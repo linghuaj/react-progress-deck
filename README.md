@@ -1,5 +1,7 @@
 # react-progress-deck
 
+https://github.com/linghuaj/react-progress-deck
+
 -  react component for generating gamification badges.
 -  Ideal use case if for visualize achivement progress etc using materialized Badge.
 -  material design, could be easily integrate with react-tween state for animiated progressing.

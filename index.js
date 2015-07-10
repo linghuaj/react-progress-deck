@@ -1,5 +1,5 @@
 'use strict';
 
-var Component = require('./src/component');
+var Component = require('./lib/component');
 
 module.exports = Component;

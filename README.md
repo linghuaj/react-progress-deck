@@ -13,8 +13,10 @@ https://github.com/linghuaj/react-progress-deck
 - support other themes.
 
 ## Run a demo
+```shellscript
 gulp webpack-dev-server
-gulp open
+gulp
+```
 
 
 ## API

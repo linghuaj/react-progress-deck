@@ -73,3 +73,19 @@ Plain Deck Progress View
 Grouped View
 
 [![Grouped Decks](https://github.com/vanessachem/react-badge/blob/master/assets/screenshot.png)](#features)
+
+## TO use materialize fonts
+```css
+  @import url(//fonts.googleapis.com/css?family=Roboto:400,500,300,100,700,900);
+  html,
+  body {
+  font-family: 'Roboto', sans-serif;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  }
+```
+
+## Materialize color
+http://materializecss.com/color.html

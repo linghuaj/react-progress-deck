@@ -5,18 +5,20 @@ describe('Progress', function () {
   var React = require('react');
   var TestUtils = require('react/lib/ReactTestUtils');
 
-  var ProgressDeck = require('select.jsx');
+  var ProgressDeck = require('component.js');
   var container, component;
 
   describe('Mounting', function() {
-
     beforeEach(function() {
       container = document.createElement('div');
       component = React.render(
-        React.createElement(RadonSelect, {selectName: "test"}, [
-          React.createElement(RadonSelect.Option, {key: "blah"}, "blah"),
-          React.createElement(RadonSelect.Option, {key: "foo"}, "foo")
-        ]),
+        React.createElement(ProgressDeck, {
+          imageUrl: "https://c3.staticflickr.com/3/2917/14333867272_acc4372727_b.jpg",
+          description: "description",
+          title: "title",
+          size: 350,
+          percentage: 0.5
+        }),
         container
       );
     });
@@ -26,7 +28,7 @@ describe('Progress', function () {
     });
 
     it('should render into the document', function() {
-        expect(component.isMounted()).to.be.true;
+      expect(component.isMounted()).to.be.true;
     });
   });
 });

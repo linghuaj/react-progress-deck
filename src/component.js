@@ -16,7 +16,7 @@ const Component = React.createClass({
 
   getDefaultProps () {
     return {
-      percentage: 0
+      percentage: 0,
       size: 350,
       progressBackgroundColor: '#acece6',
       progressForegroundColor: '#26a69a',

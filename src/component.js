@@ -60,7 +60,7 @@ const Component = React.createClass({
                 {percentageText}
               </span>
             </span>
-            <p>{this.props.description}</p>
+            <p className="description">{this.props.description}</p>
           </div>
         </div>
         <div className="progress" style={styles.progress}>

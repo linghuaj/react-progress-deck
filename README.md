@@ -37,7 +37,7 @@ gulp
 
 Main, Image Deck Progress View
 ```javascript
-        < ReactBadge
+        < ProgressDeck
           imageUrl="https://c3.staticflickr.com/3/2917/14333867272_acc4372727_b.jpg"
           description="Check in 5 different place in Yosemite"
           title="Yosemite Ninjia"
@@ -49,7 +49,7 @@ Main, Image Deck Progress View
 
 Thumbnail Deck Progress View
 ```javascript
-    < ReactBadge
+    < ProgressDeck
           description="Check in 5 different place"
           title="Eating Healthy"
           size = {350}
@@ -62,7 +62,7 @@ Thumbnail Deck Progress View
 
 Plain Deck Progress View
 ```javascript
-      < ReactBadge
+      < ProgressDeck
           description="Check in 5 different place in canada"
           title="Monthly Hiking"
           size = {350}

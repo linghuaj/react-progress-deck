@@ -2,13 +2,13 @@
 
 -  react component for generating gamification badges.
 -  Ideal use case if for visualize achivement progress etc using materialized Badge.
--  material design, could be easily integrate with react-tween state for animiated progressing. 
+-  material design, could be easily integrate with react-tween state for animiated progressing.
 -  Please criticize this project and leave your feedback in issues :)
 
 
 ## TODO:
 - this will be installable using npm.
-- support other themes. 
+- support other themes.
 
 ## Run a demo
 gulp webpack-dev-server
@@ -37,8 +37,8 @@ Main, Image Deck Progress View
           imageUrl="https://c3.staticflickr.com/3/2917/14333867272_acc4372727_b.jpg"
           description="Check in 5 different place in Yosemite"
           title="Yosemite Ninjia"
-          size = '350px'
-          percentage = {width}
+          size = 350
+          percentage = 0.5
         />
 ```
 [![image deck](https://github.com/vanessachem/react-badge/blob/master/assets/imgBadge.gif)](#features)
@@ -48,10 +48,10 @@ Thumbnail Deck Progress View
     < ReactBadge
           description="Check in 5 different place"
           title="Eating Healthy"
-          size = '350px'
+          size = 350
           imageUrl="https://cdn4.iconfinder.com/data/icons/ballicons-2-free/100/pencil-128.png"
           imageStyle="thumbnail"
-          percentage = {width*2}
+          percentage = 0.5
         />
 ```
 [![Thumbnail Deck](https://github.com/vanessachem/react-badge/blob/master/assets/thumbBadge.gif)](#features)
@@ -61,10 +61,10 @@ Plain Deck Progress View
       < ReactBadge
           description="Check in 5 different place in canada"
           title="Monthly Hiking"
-          size = '350px'
+          size = 350
           progressBackgroundColor = "#ffebee"
           progressForegroundColor = "#ef9a9a"
-          percentage = {width/3}
+          percentage = 0.5
         />
 
 ```

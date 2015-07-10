@@ -27,7 +27,7 @@ const App = React.createClass({
           imageUrl="http://i.imgur.com/WerlaFe.jpg"
           description="Check in 5 different place in canada"
           title="Canada Ninjia"
-          size = '350px'
+          size = 350
           percentage = {width}
         />
 
@@ -35,7 +35,7 @@ const App = React.createClass({
           imageUrl="https://www.adventuresmithexplorations.com/stuff/contentmgr/files/74/a0e15fabd79d337e5bad0bc9adc2bf7f/image/_resized/80_745_420_glacier_zodiac_alaska_crp.jpg"
           description="Check in 5 different place in canada"
           title="Alaska Ninjia"
-          size = '350px'
+          size = 350
           percentage = {width/2}
         />
 
@@ -43,7 +43,7 @@ const App = React.createClass({
           imageUrl="https://c3.staticflickr.com/3/2917/14333867272_acc4372727_b.jpg"
           description="Check in 5 different place in canada"
           title="Yosemite Ninjia"
-          size = '350px'
+          size = 350
           percentage = {width}
         />
 
@@ -51,7 +51,7 @@ const App = React.createClass({
         < ProgressDeck
           description="Check in 5 different place in canada"
           title="Monthly Hiking"
-          size = '350px'
+          size = 350
           progressBackgroundColor = "#ffebee"
           progressForegroundColor = "#ef9a9a"
           percentage = {width/3}
@@ -60,7 +60,7 @@ const App = React.createClass({
         < ProgressDeck
           description="Check in 5 different place in canada"
           title="Eating Healthy"
-          size = '350px'
+          size = 350
           progressBackgroundColor = "#ffebee"
           progressForegroundColor = "#ef9a9a"
           percentage = {width/5}
@@ -70,7 +70,7 @@ const App = React.createClass({
         < ProgressDeck
           description="Check in 5 different place"
           title="Eating Healthy"
-          size = '350px'
+          size = 350
           imageUrl="https://cdn4.iconfinder.com/data/icons/ballicons-2-free/100/pencil-128.png"
           imageStyle="thumbnail"
           percentage = {width*2}
@@ -79,7 +79,7 @@ const App = React.createClass({
         < ProgressDeck
           description="Check in 5 different place in canada"
           title="Eating Healthy"
-          size = '350px'
+          size = 350
           imageUrl="https://cdn2.iconfinder.com/data/icons/ballicons-2-free/100/ad-128.png"
           imageStyle="thumbnail"
           percentage = {width}

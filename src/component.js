@@ -11,7 +11,17 @@ const Component = React.createClass({
     progressBackgroundColor: PropTypes.string,
     progressForegroundColor: PropTypes.string,
     percentage: PropTypes.number,
-    size: PropTypes.string
+    size: PropTypes.number
+  },
+
+  getDefaultProps () {
+    return {
+      percentage: 0
+      size: 350,
+      progressBackgroundColor: '#acece6',
+      progressForegroundColor: '#26a69a',
+      title: 'A Deck'
+    };
   },
 
   render() {
@@ -57,7 +67,6 @@ const Component = React.createClass({
           <div className="determinate" style={styles.determinate}></div>
         </div>
       </div>
-
     );
   }
 });

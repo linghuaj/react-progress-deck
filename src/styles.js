@@ -80,7 +80,7 @@ function getStyles(props, mainStyle){
   styles.percentageText.color = styles.determinate.backgroundColor
 
   if (props.size){
-    styles.card.width =props.size;
+    styles.card.width =props.size + "px";
   }
 
   if (props.percentage){

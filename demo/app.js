@@ -1,7 +1,7 @@
 'use strict';
 
 import React from 'react/addons';
-import ReactBadge from '../src/component';
+import ProgressDeck from '../src/component';
 
 let tweenState = require('react-tween-state');
 const App = React.createClass({
@@ -23,7 +23,7 @@ const App = React.createClass({
     return (
       <div className="demo">
         <a onClick ={this.handleClick}>click me</a><br/>
-        < ReactBadge
+        < ProgressDeck
           imageUrl="http://i.imgur.com/WerlaFe.jpg"
           description="Check in 5 different place in canada"
           title="Canada Ninjia"
@@ -31,7 +31,7 @@ const App = React.createClass({
           percentage = {width}
         />
 
-        < ReactBadge
+        < ProgressDeck
           imageUrl="https://www.adventuresmithexplorations.com/stuff/contentmgr/files/74/a0e15fabd79d337e5bad0bc9adc2bf7f/image/_resized/80_745_420_glacier_zodiac_alaska_crp.jpg"
           description="Check in 5 different place in canada"
           title="Alaska Ninjia"
@@ -39,7 +39,7 @@ const App = React.createClass({
           percentage = {width/2}
         />
 
-        < ReactBadge
+        < ProgressDeck
           imageUrl="https://c3.staticflickr.com/3/2917/14333867272_acc4372727_b.jpg"
           description="Check in 5 different place in canada"
           title="Yosemite Ninjia"
@@ -48,7 +48,7 @@ const App = React.createClass({
         />
 
         <br/>
-        < ReactBadge
+        < ProgressDeck
           description="Check in 5 different place in canada"
           title="Monthly Hiking"
           size = '350px'
@@ -57,7 +57,7 @@ const App = React.createClass({
           percentage = {width/3}
         />
 
-        < ReactBadge
+        < ProgressDeck
           description="Check in 5 different place in canada"
           title="Eating Healthy"
           size = '350px'
@@ -67,7 +67,7 @@ const App = React.createClass({
         />
         <br/>
 
-        < ReactBadge
+        < ProgressDeck
           description="Check in 5 different place"
           title="Eating Healthy"
           size = '350px'
@@ -76,7 +76,7 @@ const App = React.createClass({
           percentage = {width*2}
         />
 
-        < ReactBadge
+        < ProgressDeck
           description="Check in 5 different place in canada"
           title="Eating Healthy"
           size = '350px'

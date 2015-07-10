@@ -9,8 +9,8 @@ https://github.com/linghuaj/react-progress-deck
 
 
 ## TODO:
-- this will be installable using npm.
 - support other themes.
+- more test cases.
 
 ## Run a demo
 ```shellscript

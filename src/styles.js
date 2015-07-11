@@ -1,11 +1,10 @@
-function getStyles(props, theme){
+let getStyles = (props, theme='materialize') => {
   //for now only support materialize design styled badge
-  theme = 'materialize'
   let styles = {
     card: {
       display: 'inline-block',
       verticalAlign: 'top',
-      width: '350px',
+      width: props.size + "px",
       position: 'relative',
       overflow: 'hidden',
       margin: '10px',
@@ -14,7 +13,6 @@ function getStyles(props, theme){
       color: '#272727',
       borderRadius: '2px'
     },
-
     title: {
       lineHeight: '25px',
       fontSize: '20px',
@@ -24,15 +22,15 @@ function getStyles(props, theme){
       fontSize: '12px',
       padding: '20px',
       fontWeight: 300,
-      borderRadius: '0 0 2px 2px',
       lineHeight: '15px'
     },
     percentageText: {
-      float: 'right'
+      float: 'right',
+      color: props.progressForegroundColor || '#26a69a'
     },
     imgContainer: {
       width: '100%',
-      height: '160px',
+      height: props.imageUrl? '160px' : 0,
       overflow: 'hidden'
     },
     img: {
@@ -55,42 +53,17 @@ function getStyles(props, theme){
       height: '5px',
       display: 'block',
       width: '100%',
-      backgroundColor: '#acece6',
-      borderRadius: '0px',
-      overflow: 'hidden'
+      backgroundColor: props.progressBackgroundColor || '#acece6', //'#acece6',
     },
     determinate: {
       position: 'absolute',
-      width: '80%',
+      width: props.percentage * 100 + "%",
       top: 0,
       left: 0,
       bottom: 0,
-      backgroundColor: '#26a69a'
+      backgroundColor: props.progressForegroundColor || '#26a69a'
     }
-    // }
   }
-  //TODO: what's the most effecient way
-  if (props.progressBackgroundColor){
-    styles.progress.backgroundColor = props.progressBackgroundColor;
-  }
-
-  if (props.progressForegroundColor){
-    styles.determinate.backgroundColor = props.progressForegroundColor;
-  }
-  styles.percentageText.color = styles.determinate.backgroundColor
-
-  if (props.size){
-    styles.card.width =props.size + "px";
-  }
-
-  if (props.percentage){
-    styles.determinate.width = props.percentage * 100 + "%";
-  }
-
-  if (!props.imageUrl){
-    styles.imgContainer.height = '0px';
-  }
-
   return styles;
 }
 

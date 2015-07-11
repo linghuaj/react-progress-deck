@@ -4,24 +4,26 @@ import React, {PropTypes} from 'react/addons';
 import stylesMain from './styles';
 const Component = React.createClass({
   propTypes: {
+    size: PropTypes.number, //350
     imageUrl: PropTypes.string,
     imageStyle: PropTypes.string, //"image" or "thumbnail"
     title: PropTypes.string,
     description: PropTypes.string,
+    progressMode: PropTypes.string, //bar, circle
     progressBackgroundColor: PropTypes.string,
     progressForegroundColor: PropTypes.string,
-    percentage: PropTypes.number,
-    size: PropTypes.number
+    percentage: PropTypes.number, //0.2
   },
 
   getDefaultProps () {
     return {
-      percentage: 0,
-      imageStyle: 'image',
       size: 350,
+      imageStyle: 'image',
+      title: 'a deck',
+      progressMode: 'bar',
       progressBackgroundColor: '#acece6',
       progressForegroundColor: '#26a69a',
-      title: 'A Deck'
+      percentage: 0
     };
   },
 

@@ -5,7 +5,7 @@ import stylesMain from './styles';
 const Component = React.createClass({
   propTypes: {
     imageUrl: PropTypes.string,
-    imageStyle: PropTypes.string,
+    imageStyle: PropTypes.string, //"image" or "thumbnail"
     title: PropTypes.string,
     description: PropTypes.string,
     progressBackgroundColor: PropTypes.string,
@@ -17,6 +17,7 @@ const Component = React.createClass({
   getDefaultProps () {
     return {
       percentage: 0,
+      imageStyle: 'image',
       size: 350,
       progressBackgroundColor: '#acece6',
       progressForegroundColor: '#26a69a',

@@ -1,6 +1,6 @@
-function getStyles(props, mainStyle){
+function getStyles(props, theme){
   //for now only support materialize design styled badge
-  mainStyle = 'materialize'
+  theme = 'materialize'
   let styles = {
     card: {
       display: 'inline-block',

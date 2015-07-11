@@ -1,7 +1,7 @@
 {
   "name": "react-progress-deck",
+  "description": "A materialize progress deck for gamification badges using react",
   "version": "0.0.3",
-  "description": "",
   "main": "index.js",
   "dependencies": {
     "react-tween-state": "^0.1.3"

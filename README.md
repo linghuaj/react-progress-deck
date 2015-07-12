@@ -80,7 +80,7 @@ Grouped View
 
 [![Grouped Decks](https://github.com/vanessachem/react-badge/blob/master/assets/screenshot.png)](#features)
 
-## TO use materialize fonts
+## To use materialize fonts
 ```css
   @import url(//fonts.googleapis.com/css?family=Roboto:400,500,300,100,700,900);
   html,
@@ -93,8 +93,14 @@ Grouped View
   }
 ```
 
-## Materialize color
+## Pick the Right Materialize color
 http://materializecss.com/color.html
+
+## Lazy Load Image
+https://github.com/callmecavs/layzr.js
+
+
 
 [npm-image]: https://img.shields.io/npm/v/react-progress-deck.svg?style=flat-square
 [npm-url]: https://www.npmjs.com/package/react-progress-deck
+

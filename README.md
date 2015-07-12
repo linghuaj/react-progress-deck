@@ -96,5 +96,5 @@ Grouped View
 ## Materialize color
 http://materializecss.com/color.html
 
-[npm-image]: https://img.shields.io/npm/v/fs-readdir-recursive.svg?style=flat-square
+[npm-image]: https://img.shields.io/npm/v/react-progress-deck.svg?style=flat-square
 [npm-url]: https://www.npmjs.com/package/react-progress-deck

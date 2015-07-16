@@ -16,6 +16,7 @@ export default class App extends Component {
   render() {
     let width = this.state.width
     return (
+      <div>
       <div className="demo">
 
           < ProgressDeck
@@ -41,50 +42,51 @@ export default class App extends Component {
           size = {350}
           percentage = {0.3}
         />
+        </div>
 
-        <br/>
-
-        < ProgressDeck
-          description="Check in 5 different place"
-          title="Eating Healthy"
-          size = {350}
-          imageUrl="https://cdn4.iconfinder.com/data/icons/ballicons-2-free/100/pencil-128.png"
-          imageStyle="thumbnail"
-          percentage = {0.5}
-        />
-
-        < ProgressDeck
-          description="Check in 5 different place in canada"
-          title="Eating Healthy"
-          size = {350}
-          imageUrl="https://cdn2.iconfinder.com/data/icons/ballicons-2-free/100/ad-128.png"
-          imageStyle="thumbnail"
-          percentage = {0.6}
-        />
-        <br/><br/>
-        <a onClick ={this.handleClick.bind(this)}>click me to animate progress</a>
-        <br/>
-        <Spring endValue={{val: width}}>
-          {interpolated => <ProgressDeck
-              description="Check in 5 different place in canada"
-              title="Monthly Hiking"
+        <div className="demo">
+            < ProgressDeck
+              description="Check in 5 different place"
+              title="Eating Healthy"
               size = {350}
-              progressBackgroundColor = "#ffebee"
-              progressForegroundColor = "#ef9a9a"
-              percentage = {interpolated.val}
-            />}
-        </Spring>
+              imageUrl="https://cdn4.iconfinder.com/data/icons/ballicons-2-free/100/pencil-128.png"
+              imageStyle="thumbnail"
+              percentage = {0.5}
+            />
 
-       <Spring endValue={{val: width}}>
-       {interpolated => <ProgressDeck
-           description="Check in 5 different place in canada"
-           title="Eating Healthy"
-           size = {350}
-           progressBackgroundColor = "#ffebee"
-           progressForegroundColor = "#ef9a9a"
-           percentage = {interpolated.val}
-         />}
-     </Spring>
+            < ProgressDeck
+              description="Check in 5 different place in canada"
+              title="Eating Healthy"
+              size = {350}
+              imageUrl="https://cdn2.iconfinder.com/data/icons/ballicons-2-free/100/ad-128.png"
+              imageStyle="thumbnail"
+              percentage = {0.6}
+            />
+        </div>
+        <a onClick ={this.handleClick.bind(this)}>click me to animate progress</a>
+        <div className="demo">
+            <Spring endValue={{val: width}}>
+              {interpolated => <ProgressDeck
+                  description="Check in 5 different place in canada"
+                  title="Monthly Hiking"
+                  size = {350}
+                  progressBackgroundColor = "#ffebee"
+                  progressForegroundColor = "#ef9a9a"
+                  percentage = {interpolated.val}
+                />}
+            </Spring>
+
+           <Spring endValue={{val: width}}>
+           {interpolated => <ProgressDeck
+               description="Check in 5 different place in canada"
+               title="Eating Healthy"
+               size = {350}
+               progressBackgroundColor = "#ffebee"
+               progressForegroundColor = "#ef9a9a"
+               percentage = {interpolated.val}
+             />}
+         </Spring>
+      </div>
       </div>
     );
   }

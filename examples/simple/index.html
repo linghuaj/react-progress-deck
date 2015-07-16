@@ -7,7 +7,7 @@
     * {
       box-sizing: border-box;
     }
-    .tile {
+    /*.tile {
       display: block;
       float: left;
       width: 100px;
@@ -18,11 +18,20 @@
       display: block;
       width: 100px;
       height: 100px;
+    }*/
+
+    .card {
+      margin: 5px;
+    }
+    .description {
+        height: 26px;
     }
     .demo {
-      width: 80%;
-      margin: auto;
-      position: relative;
+     display: flex;
+     flex-direction: row;
+     flex-wrap: nowrap;
+     align-content: flex-start;
+     align-items: flex-start;
     }
     @import url(//fonts.googleapis.com/css?family=Roboto:400,500,300,100,700,900);
     html,

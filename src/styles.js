@@ -21,6 +21,7 @@ let getStyles = (props, theme='materialize') => {
     content: {
       display: 'flex',
       flexDirection: 'row',
+      justifyContent: 'space-between',
       fontSize: '12px',
       padding: '20px',
       fontWeight: 300,
@@ -32,8 +33,6 @@ let getStyles = (props, theme='materialize') => {
       height: '46px',
       width: '46px',
       overflow: 'hidden',
-      float: 'left',
-      marginRight: '10px'
     },
     thumbnail: {
       width: '100%'
@@ -41,18 +40,18 @@ let getStyles = (props, theme='materialize') => {
     detail:{
       display: 'flex',
       flexDirection: 'column',
-      // alignItems:'flex-end'
+      width: '65%'
     },
     title: {
-      lineHeight: '25px',
+      lineHeight: '30px',
       fontSize: '18px',
       fontWeight: 300
     },
 
     percentageText: {
-      float: 'right',
+      fontSize: '20px',
       color: props.progressForegroundColor || '#26a69a',
-      alignSelf: 'flex-end'
+      lineHeight: '30px'
     },
 
     progress: {
@@ -96,10 +95,12 @@ let getStyles = (props, theme='materialize') => {
       fontWeight: 300,
       lineHeight: '15px'
     },
-    percentageText: {
-      float: 'right',
-      color: props.progressForegroundColor || '#26a69a'
-    },
+      percentageText: {
+        float:'right',
+        fontSize: '26px',
+        color: props.progressForegroundColor || '#26a69a',
+        lineHeight: 1,
+      },
     imgContainer: {
       width: '100%',
       height: props.imageUrl? '160px' : 0,

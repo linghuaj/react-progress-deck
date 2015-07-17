@@ -15,12 +15,11 @@ https://github.com/linghuaj/react-progress-deck
 
 ## TODO:
 - support other themes.
-- more test cases.
 
 ## Run a demo
 ```shellscript
-gulp webpack-dev-server
-gulp
+cd examples/simple
+npm start
 ```
 
 
@@ -101,7 +100,6 @@ http://materializecss.com/color.html
 
 ## Lazy Load Image
 https://github.com/callmecavs/layzr.js
-
 
 
 [npm-image]: https://img.shields.io/npm/v/react-progress-deck.svg?style=flat-square

@@ -6,7 +6,10 @@
 -  material design, could be easily integrate with react-tween state for animiated progressing.
 -  Please criticize this project and leave your feedback in issues :)
 
- 
+
+## Home Page:
+https://github.com/linghuaj/react-progress-deck
+
 ## Home Page:
 https://github.com/linghuaj/react-progress-deck
 
@@ -103,4 +106,3 @@ https://github.com/callmecavs/layzr.js
 
 [npm-image]: https://img.shields.io/npm/v/react-progress-deck.svg?style=flat-square
 [npm-url]: https://www.npmjs.com/package/react-progress-deck
-

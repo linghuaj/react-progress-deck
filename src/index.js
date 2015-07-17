@@ -55,15 +55,13 @@ const Component = React.createClass({
       <div className="card" style={styles.card}>
         {image}
         <div className="content" style={styles.content}>
-          {thumbnail}
-          <div>
-            <span className="title" style={styles.title}>
-              {this.props.title}
-              <span className="percentageText" style={styles.percentageText}>
-                {percentageText}
-              </span>
-            </span>
-            <p className="description">{this.props.description}</p>
+            {thumbnail}
+            <div className="detail" style={styles.detail}>
+              <div className="title" style={styles.title}>{this.props.title}</div>
+              <div className="description" style={styles.description}>{this.props.description}</div>
+            </div>
+          <div className="percentageText" style={styles.percentageText}>
+            {percentageText}
           </div>
         </div>
         <div className="progress" style={styles.progress}>

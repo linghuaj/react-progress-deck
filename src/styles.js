@@ -140,6 +140,4 @@ let getStyles = (props, theme='materialize') => {
   return styles;
 }
 
-
-
 export default getStyles;

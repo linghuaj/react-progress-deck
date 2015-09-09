@@ -34,7 +34,7 @@ const Component = React.createClass({
     if (this.props.percentage >= 1) {
       percentageText = 'Done';
     } else {
-      percentageText = Math.round(this.props.percentage * 100) + '%';
+      percentageText = `${Math.round(this.props.percentage * 100)}%`;
     }
 
     if (this.props.imageUrl) {

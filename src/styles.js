@@ -4,14 +4,14 @@ let getStyles = (props, theme = 'materialize') => {
     card: {
       display: 'flex',
       flexDirection: 'column',
-      width: props.size + 'px',
+      width: `${props.size}px`,
       background: '#FFF',
       boxShadow: '0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12)',
       color: '#272727',
       borderRadius: '2px'
     },
     imgContainer: {
-      width: props.size + 'px',
+      width: `${props.size}px`,
       height: props.imageUrl ? '160px' : 0,
       overflow: 'hidden'
     },
@@ -64,7 +64,7 @@ let getStyles = (props, theme = 'materialize') => {
     },
     determinate: {
       position: 'absolute',
-      width: props.percentage * 100 + '%',
+      width: `${props.percentage * 100}%`,
       top: 0,
       left: 0,
       bottom: 0,

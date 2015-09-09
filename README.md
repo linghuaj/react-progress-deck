@@ -49,7 +49,7 @@ Main, Image Deck Progress View
           percentage = {0.5}
         />
 ```
-[![image deck](https://github.com/vanessachem/react-badge/blob/master/assets/imgBadge.gif)](#features)
+[![image deck](https://raw.githubusercontent.com/linghuaj/react-progress-deck/master/assets/imgBadge.gif)](#features)
 
 Thumbnail Deck Progress View
 ```javascript
@@ -62,7 +62,7 @@ Thumbnail Deck Progress View
           percentage = {0.5}
         />
 ```
-[![Thumbnail Deck](https://github.com/vanessachem/react-badge/blob/master/assets/thumbBadge.gif)](#features)
+[![Thumbnail Deck](https://raw.githubusercontent.com/linghuaj/react-progress-deck/master/assets/thumbBadge.gif)](#features)
 
 Plain Deck Progress View
 ```javascript
@@ -76,11 +76,11 @@ Plain Deck Progress View
         />
 
 ```
-[![Plain Text Deck](https://github.com/vanessachem/react-badge/blob/master/assets/plainBadge.gif)](#features)
+[![Plain Text Deck](https://raw.githubusercontent.com/linghuaj/react-progress-deck/master/assets/plainBadge.gif)](#features)
 
 Grouped View
 
-[![Grouped Decks](https://github.com/vanessachem/react-badge/blob/master/assets/screenshot.png)](#features)
+[![Grouped Decks](https://raw.githubusercontent.com/linghuaj/react-progress-deck/master/assets/screenshot.png)](#features)
 
 ## To use materialize fonts
 ```css

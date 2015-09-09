@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import ProgressDeck from 'react-progress-deck';
-import  {Spring}  from 'react-motion';
+import {Spring} from 'react-motion';
 
 export default class App extends Component {
-  constructor(props){
+  constructor(props) {
     super(props);
     this.state = {
       width: 0.1

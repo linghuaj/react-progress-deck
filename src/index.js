@@ -12,10 +12,10 @@ const Component = React.createClass({
     progressMode: PropTypes.string, //bar, circle
     progressBackgroundColor: PropTypes.string,
     progressForegroundColor: PropTypes.string,
-    percentage: PropTypes.number, //0.2
+    percentage: PropTypes.number //0.2
   },
 
-  getDefaultProps () {
+  getDefaultProps() {
     return {
       size: 350,
       imageStyle: 'image',
@@ -31,19 +31,19 @@ const Component = React.createClass({
     let styles = stylesMain(this.props, 'materialize');
     let percentageText, image, thumbnail;
 
-    if (this.props.percentage >= 1){
-      percentageText = "Done"
-    }else{
-      percentageText= Math.round(this.props.percentage * 100) + "%"
+    if (this.props.percentage >= 1) {
+      percentageText = 'Done';
+    } else {
+      percentageText = Math.round(this.props.percentage * 100) + '%';
     }
 
-    if (this.props.imageUrl){
-      if (this.props.imageStyle==="thumbnail"){
+    if (this.props.imageUrl) {
+      if (this.props.imageStyle === 'thumbnail') {
         thumbnail =
         <div className="thumbnailContainer" style={styles.thumbnailContainer}>
           <img className="thumbnail" src={this.props.imageUrl} style={styles.thumbnail}/>
         </div>
-      }else{
+      } else {
         image =
         <div className="imgContainer" style={styles.imgContainer}>
           <img className="image" src={this.props.imageUrl} style={styles.img}/>
